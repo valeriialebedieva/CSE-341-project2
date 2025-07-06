@@ -5,6 +5,7 @@ router.get('/', (req, res) => {
     res.send('Welcome!');
 });
 
-router.use('/contacts', require('./contacts'));
+router.use('/books', require('./books'));
+router.use('/authors', require('./authors'));
 
 module.exports = router;
