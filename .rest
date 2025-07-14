@@ -1,0 +1,40 @@
+### Get all books
+GET http://localhost:3000/books
+
+### Get single book by ID
+GET http://localhost:3000/books/64c2f456a8c09aec3406ff78
+
+### Create new book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Test Book",
+    "author": "64c2f456a8c09aec3406ff78",
+    "isbn": "1234567890",
+    "publishYear": 2023,
+    "genre": ["Fiction", "Mystery"],
+    "pages": 300,
+    "publisher": "Test Publisher",
+    "language": "English",
+    "inStock": true
+}
+
+### Update book
+PUT http://localhost:3000/books/64c2f456a8c09aec3406ff78
+Content-Type: application/json
+
+{
+    "title": "Updated Test Book",
+    "author": "64c2f456a8c09aec3406ff78",
+    "isbn": "1234567890",
+    "publishYear": 2023,
+    "genre": ["Fiction", "Mystery"],
+    "pages": 300,
+    "publisher": "Test Publisher",
+    "language": "English",
+    "inStock": true
+}
+
+### Delete book
+DELETE http://localhost:3000/books/64c2f456a8c09aec3406ff78
