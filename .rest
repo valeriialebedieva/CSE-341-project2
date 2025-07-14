@@ -1,11 +1,11 @@
 ### Get all books
-GET http://localhost:3000/books
+GET https://cse-341-project2-w2n0.onrender.com/books
 
 ### Get single book by ID
-GET http://localhost:3000/books/64c2f456a8c09aec3406ff78
+GET https://cse-341-project2-w2n0.onrender.com/books/64c2f456a8c09aec3406ff78
 
 ### Create new book
-POST http://localhost:3000/books
+POST https://cse-341-project2-w2n0.onrender.com/books
 Content-Type: application/json
 
 {
@@ -21,7 +21,7 @@ Content-Type: application/json
 }
 
 ### Update book
-PUT http://localhost:3000/books/64c2f456a8c09aec3406ff78
+PUT https://cse-341-project2-w2n0.onrender.com/books/64c2f456a8c09aec3406ff78
 Content-Type: application/json
 
 {
@@ -37,4 +37,4 @@ Content-Type: application/json
 }
 
 ### Delete book
-DELETE http://localhost:3000/books/64c2f456a8c09aec3406ff78
+DELETE https://cse-341-project2-w2n0.onrender.com/books/64c2f456a8c09aec3406ff78
