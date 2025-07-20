@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(session({
     secret: "secret",
     resave: false,
-    saveUninitiated: true,
+    saveUninitialized: true,
 }));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -57,10 +57,6 @@ app.get('/github/callback', passport.authenticate('github', {
       req.session.user = req.user;
       res.redirect('/');
   });
-
-// process.on('uncaughtException', (err, origin) => {
-//   console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`);
-// });
 
 mongodb.initDb((err) => {
   if (err) {
